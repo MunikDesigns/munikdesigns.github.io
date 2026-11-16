@@ -458,9 +458,9 @@ dialog::backdrop{background:rgba(0,0,0,.62)}
       <li><a href="#services">Expertise</a></li>
       <li><a href="#toolkit">Toolkit</a></li>
       <li><a href="#experience">Experience</a></li>
+      <li><a href="#work">Portfolio</a></li>
       <li><a href="#ai">AI</a></li>
       <li><a href="#social">Social</a></li>
-      <li><a href="#work">Portfolio</a></li>
       <li><a href="#skills">Skills</a></li>
     </ul>
     <a class="btn btn--solid" href="#contact" style="padding:.75em 1.1em">Contact me</a>
@@ -627,7 +627,31 @@ dialog::backdrop{background:rgba(0,0,0,.62)}
   </div>
 </section>
 
-<section id="ai" class="sec" style="padding-top:0">
+<section id="work" class="pf-band">
+  <div class="wrap sec">
+    <div class="sec-head">
+      <div><div class="eyebrow mono">Selected work</div><h2>Portfolio</h2></div>
+      <div class="pf-tools">
+        <button class="btn btn--accent manage" id="manageBtn" hidden>Manage portfolio</button>
+        <a class="btn" href="https://www.behance.net/MunikDesigns" target="_blank" rel="noopener">Behance
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+      </div>
+    </div>
+    <div class="pf-tools" id="filters" role="group" aria-label="Filter projects"></div>
+    <div class="cf" id="cf" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Portfolio mockups. Use the arrow keys to browse.">
+      <div class="cf-stage" id="cfStage"></div>
+    </div>
+    <div class="cf-bar">
+      <button class="cf-btn" id="cfPrev" aria-label="Previous mockup"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <div class="cf-info"><div class="mono" id="cfMeta"></div><h3 id="cfTitle"></h3></div>
+      <span class="mono cf-count" id="cfCount"></span>
+      <button class="cf-btn" id="cfNext" aria-label="Next mockup"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></button>
+    </div>
+
+  </div>
+</section>
+
+<section id="ai" class="sec">
   <div class="wrap">
     <div class="sec-head">
       <div><div class="eyebrow mono">AI studio</div><h2>Designing with AI</h2></div>
@@ -832,30 +856,6 @@ dialog::backdrop{background:rgba(0,0,0,.62)}
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-<section id="work" class="pf-band">
-  <div class="wrap sec">
-    <div class="sec-head">
-      <div><div class="eyebrow mono">Selected work</div><h2>Portfolio</h2></div>
-      <div class="pf-tools">
-        <button class="btn btn--accent manage" id="manageBtn" hidden>Manage portfolio</button>
-        <a class="btn" href="https://www.behance.net/MunikDesigns" target="_blank" rel="noopener">Behance
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
-      </div>
-    </div>
-    <div class="pf-tools" id="filters" role="group" aria-label="Filter projects"></div>
-    <div class="cf" id="cf" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Portfolio mockups. Use the arrow keys to browse.">
-      <div class="cf-stage" id="cfStage"></div>
-    </div>
-    <div class="cf-bar">
-      <button class="cf-btn" id="cfPrev" aria-label="Previous mockup"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></button>
-      <div class="cf-info"><div class="mono" id="cfMeta"></div><h3 id="cfTitle"></h3></div>
-      <span class="mono cf-count" id="cfCount"></span>
-      <button class="cf-btn" id="cfNext" aria-label="Next mockup"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></button>
-    </div>
-
   </div>
 </section>
 
